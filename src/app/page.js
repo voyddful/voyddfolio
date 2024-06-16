@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="font-space container mx-auto text-amber-900">
       <div className="m-12 py-12 rounded-2xl bg-sky-200" /*items-center rounded-2xl mx-auto px-2 container max-w-7xl sm:px-6 lg:px-8*/ >
-        <div className=" m-3 columns-lg flex justify-evenly rounded-2xl items-center">
+        <div className=" m-3 lg:columns-lg lg:flex justify-evenly rounded-2xl items-center">
           <h1 className="m-5 text-2xl rounded-2xl bg-gem-100 p-5 content-center text-wrap text-center">heyyyyy</h1>
           <h1 className="m-5 text-2xl rounded-2xl bg-gem-200 p-5 content-center text-wrap text-center">heyyyyy</h1>
           <h1 className="m-5 text-2xl rounded-2xl bg-gem-300 p-5 content-center text-wrap text-center">heyyyyy</h1>

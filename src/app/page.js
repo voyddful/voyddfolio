@@ -1,28 +1,37 @@
 'use client'
 import "./globals.css"
-import navigation from './navbar.js'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Home() {
   let pathname = usePathname()
   return (
-    <main className="font-space container mx-auto text-amber-900">
-      <div className="m-12 py-12 rounded-2xl bg-sky-200" /*items-center rounded-2xl mx-auto px-2 container max-w-7xl sm:px-6 lg:px-8*/ >
-        <div className=" m-3 lg:columns-lg lg:flex justify-evenly rounded-2xl items-center">
-          <h1 className="m-5 text-2xl rounded-2xl bg-gem-100 p-5 content-center text-wrap text-center">heyyyyy</h1>
-          <h1 className="m-5 text-2xl rounded-2xl bg-gem-200 p-5 content-center text-wrap text-center">heyyyyy</h1>
-          <h1 className="m-5 text-2xl rounded-2xl bg-gem-300 p-5 content-center text-wrap text-center">heyyyyy</h1>
-          <h1 className="m-5 text-2xl rounded-2xl bg-gem-400 p-5 content-center text-wrap text-center">heyyyyy</h1>
-          <h1 className="m-5 text-2xl rounded-2xl bg-gem-500 p-5 content-center text-wrap text-center">heyyyyy</h1>
-          {/*<img
-          alt="logo"
-          className="m-5 rounded-2xl bg-gem-400 p-5 content-center"
-          src="/webdev.png"
+    <div className="font-space text-amber-900">
+      <div className=" bg-gradient-to-bl from-sky-300 to-gem-400" /*items-center rounded-2xl mx-auto px-2 container max-w-7xl sm:px-6 lg:px-8*/ >
+        <div className=" lg:grid lg:grid-cols-2 py-10 rounded-2xl items-center">
+          <div className="my-5 content-center lg:my-0 mx-5">
+            <h1 className="text-2xl rounded-2xl bg-gradient-to-bl from-sky-100 to-gem-300 p-5 content-center text-wrap text-center">
+            The Enigmatic Library: In the heart of a forgotten forest, there stands an ancient library. Its walls, adorned with ivy and secrets, seem to whisper to those who approach. The librarian, an ageless figure with silver hair and eyes like forgotten constellations, guards the knowledge within. Visitors arrive seeking answers to questions they haven’t yet formed—their footsteps echoing through the hallowed halls. Each book holds a universe, and the pages breathe with stories of lost civilizations, forbidden spells, and the taste of stardust.
 
-          />*/}
+            </h1>
+          </div> 
+          <div className="justify-center flex">
+            <img
+         
+            alt="logo"
+            className=" rounded-2xl bg-gradient-to-bl from-sky-100 to-gem-300 p-5"
+            src="/webdev.png"
+            width="80%"
+            height="80%"
+          
+            />
+          </div>
+
+          
         </div>
+        <div className="p-10 bg-jet-100 backdrop-blur-lg"></div>
         
       </div>
-    </main>
+    </div>
   );
 }

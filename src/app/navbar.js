@@ -56,7 +56,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-jet-300">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-4">
+          <div className="mx-auto max-w-7xl font-lg px-2 sm:px-6 lg:px-4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -88,7 +88,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-jet-400 text-sky-200 hover:text-sky-100' : 'text-jet-100 hover:bg-jet-200 hover:text-sky-100',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-3 py-2 lg:text-sm xl:text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : 'undefined'}
                       >
@@ -102,7 +102,7 @@ export default function Navbar() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
+                <Menu as="div" className="relative backdrop-blur-lg ml-3">
                   <div>
                     <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />

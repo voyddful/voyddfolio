@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         space: ['"Space Grotesk"', '"PT sans"'],
-        fjalla: ['"Fjalla One"']
+        fjalla: ['"Fjalla One"'],
+        cormorant: ['"Cormorant Garamond"']
       }
     },
     
@@ -25,7 +26,12 @@ module.exports = {
         400: '#9546C3',
         500: '#7F37A9'
       },
-      'lemon': '#FCF6BD',
+      'lemon':{
+       100:'#FCF6BD',
+       200:'#FAF19E',
+       300:'#F9EC77',
+       400: '#F7E650'
+      } ,
       'sky': {
         100: '#75C0D1',
         200: '#3891A6',

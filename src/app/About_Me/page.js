@@ -6,8 +6,8 @@ export default function aboutme() {
     return(
         <main className='font-cormorant '>
             <section className=''>
-                <div className='p-10 text-lemon-100 grid text-center gap-8  grid-cols-2'>
-                    <div className='-mx-10 col-span-2 py-10 bg-black/40  content-center  text-5xl'>The Face Behind The Name</div>
+                <div className='p-10 text-lemon-100 md:grid text-center md:gap-8  md:grid-cols-2'>
+                    <div className='-mx-10 md:col-span-2 py-10 bg-black/40  content-center  text-5xl'>The Face Behind The Name</div>
                     <div className='bg-black/40 min-h-96 rounded-lg'>
                         <div className='my-5 p-5 text-lemon-1 text-3xl'>Hello, I'm De'Andre Randolph, an ambitious Website Developer interested in creating websites for those who need them (for affordable prices)</div>
                         <ul>
@@ -21,8 +21,8 @@ export default function aboutme() {
                             <li></li>
                         </ul>
                     </div>
-                    <div className='bg-black/40 p-5 min-h-96 row-span-2 rounded-lg grid justify-center'>
-                        <div className='mb-5 text-lemon-1  text-5xl'>A Photo Of Me</div>
+                    <div className='bg-black/40 p-5 min-h-96 md:row-span-2 rounded-lg md:grid justify-center'>
+                        <div className='mb-5 text-lemon-1 text-5xl'>A Photo Of Me</div>
                         <img className='mb-5 rounded-xl hover:ring-2 hover:ring-gem-200/60 hover:ring-offset-4 hover:ring-offset-lemon-100/40' src="/suited_randolph.jpg"/>
                     </div>
                     <div className='bg-black/40 min-h-96 rounded-lg'>
@@ -45,8 +45,8 @@ export default function aboutme() {
                 </div>
             </section>
             <section>
-            <div className='p-10 text-lemon-100 grid text-center gap-8 grid-cols-2'>
-                    <div className='-mx-10 col-span-2 py-10 bg-black/40  content-center text-5xl'>The Face Behind The Name</div>
+            <div className='p-10 text-lemon-100 md:grid text-center md:gap-8 md:grid-cols-2'>
+                    <div className='-mx-10 md:col-span-2 py-10 bg-black/40  content-center text-5xl'>The Face Behind The Name</div>
                     <div className='bg-black/40 min-h-96 rounded-lg'>
                         <div className='my-5 text-lemon-1  text-5xl'>Acheivements</div>
                         <ul>

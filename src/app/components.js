@@ -14,13 +14,14 @@ import {
   Transition,
 } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { motion } from 'framer-motion'
 
 
 export let navigation = [
     { name: 'Home', href: '/', current: false },
     { name: 'About Me', href: '/About_Me', current: false},
     { name: 'Projects', href: '/Projects', current: false },
-    { name: 'Contact Me', href: '#', current: false },
+    { name: 'Blog-Full', href: '/Blog-full', current: false },
   ]
 /*console.log(navigation)
 console.log(navigation[0])
@@ -55,10 +56,17 @@ export default function Navbar() {
       navigation[0]['current'] = false
       break;
     case "/Projects":
-        navigation[1]['current'] = false
-        navigation[2]['current'] = true
-        navigation[3]['current'] = false
-        navigation[0]['current'] = false
+      navigation[1]['current'] = false
+      navigation[2]['current'] = true
+      navigation[3]['current'] = false
+      navigation[0]['current'] = false
+      break;
+    case "/Blog-full":
+      navigation[1]['current'] = false
+      navigation[2]['current'] = false
+      navigation[3]['current'] = true
+      navigation[0]['current'] = false
+      break;
   }
   
 
@@ -66,7 +74,7 @@ export default function Navbar() {
   
   
   return (
-    <Disclosure as="nav" className=" sticky top-0 bg-gradient-to-r from-jet-300 from-25% to-jet-200">
+    <Disclosure as="nav" className=" bg-gradient-to-r from-jet-300 from-25% to-jet-200">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl font-lg px-2 sm:px-6 lg:px-4">
@@ -135,5 +143,30 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
+  )
+}
+
+export function Scroller({children}){
+  return(
+  <motion.div initial={{ opacity: 0 }}  whileInView={{ opacity: 1, transition: {delay: .2} }}>
+    
+      {children}
+    
+   
+        
+  </motion.div>)
+}
+export function Button({children}, link){
+  return(
+    <motion.button
+      whileHover={{
+        scale: 1.2,
+        transition: { duration: .5 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      href="deandrerandolph.com"
+      >
+        {children}
+      </motion.button>
   )
 }

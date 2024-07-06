@@ -53,7 +53,7 @@ export default function Home() {
         
       </div>
       <div className=" bg-jet-100 h-10"></div>
-      <div className=" bg-gem-400"> stuff</div>
+      <div className="h-screen bg-gem-400"> stuff</div>
     </div>
    
   );

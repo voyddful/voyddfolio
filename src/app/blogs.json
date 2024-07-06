@@ -1,0 +1,20 @@
+[
+    {
+        "title": "blog 1",
+        "description": "descript",
+        "image": "/crystalline eye.png",
+        "time": "20 mins"
+    },
+    {
+        "title": "blog 2",
+        "description": "descript",
+        "image": "/crystalline eye2.png",
+        "time": "20 mins"
+    },
+    {
+        "title": "blog 3",
+        "description": "descript",
+        "image": "/crystalline.png",
+        "time": "20 mins"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Original Voyddfolio",
+        "Img": "/VoyddfolioOrg.png",
+        "Descript": "The original voyddfolio, made as a school project. includes school projects and personal projects, like my blog and image gallery. currently depreciated as this website grows. made with mainly html, css and js, with help from inline Vue and jQuery. Uses Bootstrap as the css framework. Hosted by bluehost.",
+        "Link": "https://deandrerandolph.com"
+    },
+    {
+        "Name": "Everchanging Essence",
+        "Img": "/Everchanging.png",
+        "Descript": "A website built for my favorite spiritual product company. First next.js project and first Database project. Includes ecommerce components. Deployed by vercel.",
+        "Link": "https://everchangingv3.vercel.app/"
+    },
+    {
+        "Name": "Blossoms And Bliss",
+        "Img": "/BlossomsandBliss.png",
+        "Descript": "A simply rsvp website for a Family Member. Operates by using excel to store data instead of a database for more consumer friendly access to data. Built with next.js and Tailwind css.",
+        "Link": ""
+    }
+]

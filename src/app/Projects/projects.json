@@ -15,6 +15,6 @@
         "Name": "Blossoms And Bliss",
         "Img": "/BlossomsandBliss.png",
         "Descript": "A simply rsvp website for a Family Member. Operates by using excel to store data instead of a database for more consumer friendly access to data. Built with next.js and Tailwind css.",
-        "Link": ""
+        "Link": "https://blossomsandbliss.vercel.app/"
     }
 ]

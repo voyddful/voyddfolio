@@ -14,6 +14,7 @@ export default function blogfull(){
                     const { title, description, image, time } = blog;
                     return(
                         <motion.a
+                        
                         key={1}
                         whileHover={{ scale: 1.05 }}
                         onHoverStart={e => {}}

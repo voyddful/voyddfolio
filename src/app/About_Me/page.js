@@ -1,7 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import { Voyddful } from '../components.js'
-import { Scroller, Button } from '../components.js' 
+import { Scrollers, Button } from '../components.js' 
 export default function aboutme() {
     let pathname = usePathname()
     return(
@@ -46,7 +46,7 @@ export default function aboutme() {
                 </div>
             </section>
             <section>
-            <Scroller>
+            <Scrollers>
             <div className='p-10 text-lemon-100 md:grid text-center md:gap-8 md:grid-cols-2'>
                     <div className='-mx-10 md:col-span-2 py-10 bg-black/40  content-center text-5xl'>The Face Behind The Name</div>
                     <div className='bg-black/40 min-h-96 rounded-lg'>
@@ -89,7 +89,7 @@ export default function aboutme() {
                         </ul>
                     </div>
                 </div>
-            </Scroller>
+            </Scrollers>
             
             </section>
         </main>

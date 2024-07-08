@@ -156,6 +156,16 @@ export function Scroller({children}){
         
   </motion.div>)
 }
+export function Scrollers({children}){
+  return(
+  <motion.div initial={{ opacity: 0 }}  whileInView={{ opacity: 1, transition: {delay: .2} }}>
+    
+      {children}
+    
+   
+        
+  </motion.div>)
+}
 export function Button({children}, link){
   return(
     <motion.button

@@ -1,5 +1,5 @@
 'use client'
-import team from '../About_Me/team.json'
+
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 export default function TeamSection() {

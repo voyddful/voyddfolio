@@ -18,3 +18,11 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+
+#pricing-items{
+    @apply h-[75vh] p-5 w-[50vh]
+}
+
+html {
+    @apply scroll-smooth
+}

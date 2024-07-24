@@ -2,19 +2,29 @@
     {
         "title": "blog 1",
         "description": "descript",
+        "tag": "inflammation",
         "image": "/crystalline eye.png",
         "time": "20 mins"
     },
     {
         "title": "blog 2",
         "description": "descript",
+        "tag": "cough",
         "image": "/crystalline eye2.png",
         "time": "20 mins"
     },
     {
         "title": "blog 3",
         "description": "descript",
+        "tag": "sneeze",
         "image": "/crystalline.png",
+        "time": "20 mins"
+    },
+    {
+        "title": "blog 4",
+        "description": "descript",
+        "tag": "constipation",
+        "image": "/Everchanging.png",
         "time": "20 mins"
     }
 ]

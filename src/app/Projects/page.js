@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Scroller, Button } from '../components.js'
+import Scroller from '../components/Scroller'
 import projects from './projects.json'
 
 export const metadata = {
@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <main className=" font-cormorant">
-      <section>
+    <main className=" font-serif">
+      <section className="bg-gray-800">
         {/*each projest thing */}
 
         <div className=" p-10 text-lemon-100 md:grid md:gap-8  md:grid-cols-3">
@@ -35,7 +35,7 @@ export default function Projects() {
 
                   <Link
                     href={link}
-                    className="btn lg:btn-wide btn-lg btn-success text-white"
+                    className="btn transition hover:scale-105  lg:btn-wide btn-lg btn-success text-white"
                   >
                     Visit {Name}
                   </Link>

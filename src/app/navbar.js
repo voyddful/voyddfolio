@@ -1,6 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import "./globals.css";
+import './globals.css'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import {
@@ -15,13 +15,12 @@ import {
 } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-
 export let navigation = [
-    { name: 'Home', href: '/', current: false },
-    { name: 'About Me', href: '/About_Me', current: false},
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Contact Me', href: '#', current: false },
-  ]
+  { name: 'Home', href: '/', current: false },
+  { name: 'About Me', href: '/About_Me', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Contact Me', href: '#', current: false },
+]
 /*console.log(navigation)
 console.log(navigation[0])
 console.log(navigation[0]['current'])*/
@@ -30,33 +29,28 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
 export default function Navbar() {
   let pathname = usePathname()
-  switch(pathname){
-    case "/":
+  switch (pathname) {
+    case '/':
       navigation[1]['current'] = false
       navigation[2]['current'] = false
       navigation[3]['current'] = false
       navigation[0]['current'] = true
-      break;
-    case "/About_Me":
+      break
+    case '/About_Me':
       navigation[1]['current'] = true
       navigation[2]['current'] = false
       navigation[3]['current'] = false
       navigation[0]['current'] = false
-      break;
+      break
   }
-  
 
-  
-  
-  
   return (
-    <Disclosure as="nav" className="bg-jet-300">
+    <Disclosure as="nav" className="bg-jet-100">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl font-lg px-2 sm:px-6 lg:px-4">
+          <div className="mx-auto font-lg px-2 sm:px-6 lg:px-4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -87,14 +81,14 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-jet-400 text-sky-200 hover:text-sky-100' : 'text-jet-100 hover:bg-jet-200 hover:text-sky-100',
+                          item.current
+                            ? 'bg-jet-400 text-sky-200 hover:text-sky-100'
+                            : 'text-jet-100 hover:bg-jet-200 hover:text-sky-100',
                           'rounded-md px-3 py-2 lg:text-sm xl:text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : 'undefined'}
                       >
-                        
                         {item.name}
-                        
                       </Link>
                     ))}
                   </div>
@@ -127,7 +121,7 @@ export default function Navbar() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className='bg-jet-100 block px-4 py-2 text-sm text-gray-700'
+                            className="bg-jet-100 block px-4 py-2 text-sm text-gray-700"
                           >
                             Your Profile
                           </a>
@@ -137,7 +131,7 @@ export default function Navbar() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className='bg-jet-100 block px-4 py-2 text-sm text-gray-700'
+                            className="bg-jet-100 block px-4 py-2 text-sm text-gray-700"
                           >
                             Settings
                           </a>
@@ -147,7 +141,7 @@ export default function Navbar() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className='bg-jet-100 block px-4 py-2 text-sm text-gray-700'
+                            className="bg-jet-100 block px-4 py-2 text-sm text-gray-700"
                           >
                             Sign out
                           </a>
@@ -167,7 +161,7 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className='text-jet-200 hover:bg-jet-200 hover:text-sky-100 text-center block rounded-md px-3 py-2 text-base font-medium'
+                  className="text-jet-200 hover:bg-jet-200 hover:text-sky-100 text-center block rounded-md px-3 py-2 text-base font-medium"
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}

@@ -1,5 +1,4 @@
 import { Website, BrandAdvancement, AdvertisingMarketing } from './products'
-import ProductNav from '../components/ProductNav'
 
 export default function Products() {
   return (

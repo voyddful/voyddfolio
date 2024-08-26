@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 export default function personPage() {
   return (
-    <section className=" min-h-screen">
+    <section className="font-space min-h-screen bg-gray-800">
       <div className="p-10 text-lemon-100 grid grid-cols-1 text-center gap-8  md:grid-cols-2">
         <div className="-mx-10 md:col-span-2  py-10 px-5 bg-gray-500/40 order-first  content-center  text-5xl">
           Enter Voyddful
@@ -34,7 +34,7 @@ export default function personPage() {
         </div>
         <div
           className={classNames(
-            'bg-gray-500/40 p-5 order-first min-h-96 md:row-span-2 rounded-lg md:grid justify-center'
+            'bg-gray-500/40 p-5 min-h-96 md:row-span-2 rounded-lg md:grid justify-center'
           )}
         >
           <img className="mb-5 rounded-xl" src="/suited_randolph.jpg" />

@@ -9,7 +9,7 @@ export default function AdminSync() {
     return (
       <Link
         className={
-          'text-jet-100 mx-2 hover:bg-jet-200 hover:text-sky-100 rounded-md px-3 btn btn-ghost py-2 lg:text-sm xl:text-base font-medium'
+          'text-jet-100 mx-2  hover:bg-jet-200 hover:text-sky-100 rounded-md px-3 btn btn-ghost py-2 lg:text-sm xl:text-base font-medium'
         }
         href="/Admin"
       >

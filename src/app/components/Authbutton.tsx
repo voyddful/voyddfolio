@@ -8,7 +8,7 @@ export default function AuthButton() {
     return (
       <>
         <button
-          className="flex content-center btn btn-ghost btn-lg items-center rounded-lg p-2 text-lg "
+          className="hidden lg:flex content-center btn btn-ghost btn-lg items-center rounded-lg p-2 text-lg "
           onClick={() => signOut()}
         >
           <h1 className="mb-1 flex items-center content-center">

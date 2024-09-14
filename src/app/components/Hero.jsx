@@ -8,7 +8,7 @@ export default function Hero() {
           className="w-[80%] transition-all hover:scale-105 lg:w-[60%] rounded-lg shadow-2xl"
         >
           <img
-            src="/voyddfolio.png"
+            src="/webdevelopment.png"
             alt="Voyddfolio Logo"
             className="rounded-2xl w-full"
           />

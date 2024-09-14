@@ -26,7 +26,7 @@ export default async function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="font-mono bg-gradient-to-b from-sky-300 to-gem-400">
+      <body className="font-mono overflow-x-hidden bg-gradient-to-b from-sky-300 to-gem-400">
         <SessionProvider session={session}>
           <Navbar />
           {children}

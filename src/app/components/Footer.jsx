@@ -4,20 +4,20 @@ export default async function Footer() {
   let session = await getServerSession()
   return (
     <footer className="footer bg-neutral text-neutral-content items-center p-4">
-      <aside className="grid-flow-col items-center">
+      <aside className="grid-flow-col w-full text-center justify-center items-center">
         <Link
           href="/"
           className="flex btn btn-ghost flex-shrink-0 items-center"
         >
           <img
-            className="h-8 inline-block mx-2 w-auto"
+            className="h-8 inline-block mx-1 md:mx-2 w-auto"
             src="/V-oyddfolio.svg"
             alt="Voyddfolio"
           />
           <span className=" font-bold  text-2xl">Voyddfolio</span>
         </Link>
       </aside>
-      <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <nav className="grid-flow-col justify-center  w-full gap-4 md:place-self-center md:justify-self-end">
         <Link className="btn btn-ghost" href="/About_Me">
           About Me
         </Link>
@@ -29,7 +29,7 @@ export default async function Footer() {
         </Link>
 
         <Link
-          className="hidden lg:block btn btn-ghost"
+          className="hidden md:flex btn btn-ghost"
           href="https://x.com/Voyddfolio"
         >
           <svg
@@ -43,7 +43,7 @@ export default async function Footer() {
           </svg>
         </Link>
         <Link
-          className="hidden lg:block btn btn-ghost"
+          className="hidden md:flex btn btn-ghost"
           href="mailto:voyddfolio@gmail.com"
         >
           <svg

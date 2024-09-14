@@ -7,11 +7,15 @@ export default function Hero() {
           href="/Products"
           className="w-[80%] transition-all hover:scale-105 lg:w-[60%] rounded-lg shadow-2xl"
         >
-          <img src="/voyddfolio.png" className="rounded-2xl w-full" />
+          <img
+            src="/voyddfolio.png"
+            alt="Voyddfolio Logo"
+            className="rounded-2xl w-full"
+          />
         </Link>
 
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-2xl md:text-5xl font-bold">
             Voyddfolio is now providing Portfolio Website Development!
           </h1>
           <p className="py-6">

@@ -16,36 +16,7 @@ export default function Navbar() {
   return (
     <div className="navbar font-space bg-neutral">
       <div className="flex-1">
-        <Link
-          href="/"
-          className="flex btn btn-ghost flex-shrink-0 items-center"
-        >
-          <img
-            className="h-8 inline-block mx-2 w-auto"
-            src="/V-oyddfolio.svg"
-            alt="Voyddfolio"
-          />
-          <span className=" font-bold  text-2xl">Voyddfolio</span>
-        </Link>
-        <ul className="menu menu-horizontal px-1">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={
-                'text-jet-100 mx-2 hover:bg-jet-200 hover:text-sky-100 rounded-md px-3 btn btn-ghost py-2 lg:text-sm xl:text-base font-medium'
-              }
-              aria-current={item.current ? 'page' : 'undefined'}
-              aria-disabled={item.able ? 'true' : 'false'}
-            >
-              {item.name}
-            </Link>
-          ))}
-          <div>
-            <AdminSync />
-          </div>
-        </ul>
-        <div className="dropdown">
+        <div className="lg:hidden dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,17 +37,42 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
+            {navigation.map((item) => (
+              <li key={item.name}>
+                <Link href={item.href}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
+        <Link
+          href="/"
+          className="flex btn btn-ghost flex-shrink-0 items-center"
+        >
+          <img
+            className="h-8 inline-block mx-2 w-auto"
+            src="/V-oyddfolio.svg"
+            alt="Voyddfolio"
+          />
+          <span className=" font-bold  text-2xl">Voyddfolio</span>
+        </Link>
+        <ul className=" hidden lg:block menu menu-horizontal px-1">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={
+                'text-jet-100 mx-2 hover:bg-jet-200 hover:text-sky-100 rounded-md px-3 btn btn-ghost py-2 lg:text-sm xl:text-base font-medium'
+              }
+              aria-current={item.current ? 'page' : 'undefined'}
+              aria-disabled={item.able ? 'true' : 'false'}
+            >
+              {item.name}
+            </Link>
+          ))}
+          <div className="hidden">
+            <AdminSync />
+          </div>
+        </ul>
       </div>
       <div className="flex-none">
         <div className="hidden lg:block">
